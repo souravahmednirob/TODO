@@ -31,9 +31,8 @@ public class TodoItemRequestDto {
 
     private LocalTime time;
 
-    @NotNull(message = "Priority is required")
+    @NotBlank(message = "Priority is required")
     private Priority priority;
 
-    @NotNull(message = "Notify is required")
     private Notify notify;
 }
